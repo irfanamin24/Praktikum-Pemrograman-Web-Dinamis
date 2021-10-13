@@ -1,42 +1,42 @@
 <html>
     <head>
-        <title>My Guest Book</title>
+        <title>My Guest Book</title>    <!--Membuat title atau judul -->
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     </head>
     <body>
-        <div align="center"><strong><font size="6" face="Courier New, Courier,mono">BUKU TAMU </font></strong></div>
-            <form name="form1" method="post" action="proses.php">
-                <table width="58%" border="0" align="center">
+        <div align="center"><strong><font size="6" face="Courier New, Courier,mono">BUKU TAMU </font></strong></div>    <!--mengatur tampilan pada table -->
+            <form name="form1" method="post" action="proses.php">   <!--membuat metode form pada table -->
+                <table width="58%" border="0" align="center">   <!--mambuat sebuah table -->
                     <tr>
-                        <td>Nama Lengkap</td>
-                        <td><input name="nama" type="text" id="nama"></td>
+                        <td>Nama Lengkap</td>   <!--kolom nama lengkap -->
+                        <td><input name="nama" type="text" id="nama"></td>  <!--dengan inputnya nama, dengan type text dan idnya nama -->
                     </tr>
                     <tr>
-                        <td>Alamat</td>
-                        <td><input name="alamat" type="text" id="alamat"></td>
+                        <td>Alamat</td> <!--kolom alamat-->
+                        <td><input name="alamat" type="text" id="alamat"></td>  <!--dengan inputnya alamat, dengan type text dan idnya elamat-->
                     </tr>
                     <tr>
-                        <td>E-Mail</td>
-                        <td><input name="email" type="text" id="email"></td>
+                        <td>E-Mail</td> <!--kolom email-->
+                        <td><input name="email" type="text" id="email"></td>    <!--dengan inputnya email, dengan type text dan idnya email-->
                     </tr>
                     <tr>
-                        <td>Status</td>
-                        <td><select name="status" id="status">
-                            <option>Menikah</option>
-                            <option>Single</option>
-                            </select></td>
+                        <td>Status</td> <!--kolom status-->
+                        <td><select name="status" id="status">  <!--dengan inputnya status, dengan type select, dan idnya status-->
+                            <option>Menikah</option>    <!--pilihan menikah-->
+                            <option>Single</option> <!--pilihan single-->
+                            </select></td>  <!--sebuah action pilihan-->
                     </tr>
                     <tr>
-                        <td>Komentar</td>
-                        <td><textarea name="komentar" id="komentar"></textarea></td>
+                        <td>Komentar</td>   <!--kolom komentar-->
+                        <td><textarea name="komentar" id="komentar"></textarea></td> <!--dengan inputnya komentar, dengan type select dan idnya komentar-->
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="Submit" value="Kirim"><input type="reset"name="Submit2" value="Batal">
+                        <td><input type="submit" name="Submit" value="Kirim"><input type="reset"name="Submit2" value="Batal">   <!--Input dari sebuah submit untuk melakukan aksi mengirim-->
                         </td>
                     </tr>
                 </table>
             </form>
-        <div align="center"><strong><a href="lihat.php">::Lihat Buku Tamu::</a></strong></div>
+        <div align="center"><strong><a href="lihat.php">::Lihat Buku Tamu::</a></strong></div>  <!--membuat link pada lihat buku tamu-->
     </body>
 </html>
