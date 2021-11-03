@@ -3,6 +3,46 @@
         <title>Tambah data mahasiswa</title>    <!-- membuat title sebuah halaman -->
     </head>
     <body>
+
+    <?php
+            // define variables and set to empty values          nim nama jkel alamat tgllhr 
+            $nimErr = $namaErr = $jkelErr = $alamatErr = $tgllhrErr = "";
+            $nim = $nama = $jkel = $alamat = $tgllhr = "";
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if (empty($_POST["nim"])) {
+                    $nimErr = "NIM harus diisi";
+                }else {
+                    $nim = test_input($_POST["nim"]);
+                }
+                if (empty($_POST["nama"])) {
+                    $namaErr = "Nama harus diisi";
+                }else {
+                    $nama = test_input($_POST["nama"]);
+                }
+                if (empty($_POST["jkel"])) {
+                    $jkelErr = "Jenis Kelamin harus diisi";
+                }else {
+                    $jkel = test_input($_POST["jkel"]);
+                }
+                if (empty($_POST["alamat"])) {
+                    $alamatErr = "Alamat harus diisi";
+                }else {
+                    $alamat = test_input($_POST["alamat"]);
+                }
+                if (empty($_POST["tgllhr"])) {
+                    $tgllhrErr = "Tanggal Lahir harus diisi";
+                }else {
+                    $tgllhr = test_input($_POST["tgllhr"]);
+                }
+            }
+            function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+            }
+        ?>
+    
         <a href="index.php">Go to Home</a>  <!-- membuat link ke goto home -->
         <br/><br/>
         <form action="tambah.php" method="post" name="form1">   <!--membuat form jika ke submit dengan aksi akan ke memproses tambah.php, dengan method post dan nama formnya form1 -->

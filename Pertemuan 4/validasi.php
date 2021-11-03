@@ -90,32 +90,16 @@
             </table>
         </form>
         <?php
-            echo "<br>";
             echo "<h2>Data yang anda isi:</h2>";
+            echo $nama;
             echo "<br>";
-            echo "<table width = 300 border =1>
-                <tr>
-                    <td>Nama :</td>
-                    <td>$nama</td>
-                </tr>
-                <tr>
-                    <td>Email :</td>
-                    <td>$email</td>
-                </tr>
-                <tr>
-                    <td>Website :</td>
-                    <td>$website</td>
-                </tr>
-                <tr>
-                    <td>Comment :</td>
-                    <td>$comment</td>
-                </tr>
-                <tr>
-                    <td>Gender :</td>
-                    <td>$gender</td>
-                </tr>
-            </table>";
+            echo $email;
+            echo "<br>";
+            echo $website;
+            echo "<br>";
+            echo $comment;
+            echo "<br>";
+            echo $gender;
         ?>
-        
     </body>
 </html>
