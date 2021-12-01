@@ -28,6 +28,7 @@ $result = mysqli_query($con, "SELECT * FROM mahasiswa ");   //query ini untuk me
             }
         ?>
         </table>
+        <br/>
         <a href="lap_mhs.php">Cetak Mahasiswa</a><br/><br/>     <!--membuat link untuk mencetak mahasiswa dengan mengakses ke lap_mhs.php-->
     </body>
 </html>
